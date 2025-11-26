@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Set Exercise 4: Web Accessibility</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<nav aria-label="Main navigation">
+				<a href="/">
+					<img
+						src="./TheDivider.png"
+						alt="The Wondering Photographer - Home"
+					/>
+				</a>
+			</nav>
+		</header>
+
+		<main id="main-content">
+			<section class="cart" aria-label="Shopping cart">
+				<a href="#" aria-label="View shopping cart (0 items)">
+					<img src="./shopping.svg" alt="" />
+				</a>
+			</section>
+
+			<section aria-labelledby="gallery-heading">
+				<div class="card">
+					<img
+						src="./OceanPhoto.jpg"
+						alt="A family enjoying a day at the beach in Greenland"
+					/>
+					<div class="card-details">
+						<h2>Greenland Beach</h2>
+						<p>
+							This was from a fabulous trip to the coast of
+							Greenland with my family. The water was lovely- but
+							very cold!
+						</p>
+						<button
+							aria-label="Add Greenland Beach photo to basket"
+						>
+							Add to Basket
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="./BridgePhoto.jpg"
+						alt="The Golden Gate Bridge in San Francisco"
+					/>
+					<div class="card-details">
+						<h2>Golden Gate Bridge</h2>
+						<p>
+							A picture of the Golden Gate Bridge in San
+							Francisco, California.
+						</p>
+						<button
+							aria-label="Add Golden Gate Bridge photo to basket"
+						>
+							Add to Basket
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="./ValleyPhoto.jpg"
+						alt="A river valley in Greenland where a glacier used to be"
+					/>
+					<div class="card-details">
+						<h2>Greenland Valley</h2>
+						<p>
+							Another great photo from Greenland. It's a river
+							valley where a glacier used to be.
+						</p>
+						<button
+							aria-label="Add Greenland Valley photo to basket"
+						>
+							Add to Basket
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="./WaterfallPhoto.jpg"
+						alt="A beautiful waterfall cascading down rocks"
+					/>
+					<div class="card-details">
+						<h2>Waterfall</h2>
+						<p>
+							The waterfall made such a lovely sound. I could have
+							fallen asleep!
+						</p>
+						<button aria-label="Add Waterfall photo to basket">
+							Add to Basket
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>Copyright The Wondering Photographer 2018.</p>
+			<nav aria-label="Footer navigation">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/about">About me</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+</html>
