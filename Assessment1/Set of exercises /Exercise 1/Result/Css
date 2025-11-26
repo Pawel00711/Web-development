@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+header,
+main,
+footer {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	margin: auto;
+}
+
+header,
+footer {
+	background-color: #dddddd;
+}
+
+header > h1 {
+	font-size: 24px;
+}
+
+nav {
+	display: flex;
+	padding: auto;
+}
+
+nav > ul {
+	list-style: none;
+	display: inline-flex;
+	padding: 0;
+}
+
+nav > ul > li:nth-child(even) {
+	padding: 0 5px;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 18px;
+}
+.context {
+	background-color: #dddddd;
+	padding: 20px 10px;
+}
